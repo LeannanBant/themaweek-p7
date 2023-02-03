@@ -40,13 +40,18 @@ $this->gender = $gender;
     function getIsStudent() {
         return $this->isStudent;
     }
-    function setAvarageGrade(double $avarageGrade) {
+    function setAvarageGrade(float $avarageGrade) {
         $this->avarageGrade = $avarageGrade;
     }
     function getAvarageGrade() {
         return $this->avarageGrade;
     }
 
+    function getGegevens() {
+    echo "De gegevens van ".$this->name." zijn:<br>";
+    echo "Leeftijd: ".$this->age."<br>";
+    echo "Geslacht: ".$this->gender."<br><br>";
+    }
 
 
 }
